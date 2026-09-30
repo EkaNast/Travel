@@ -391,6 +391,13 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  transition: .2s linear;
+  padding-bottom: 20px;
+  z-index: 999;
+}
+
+.header__active {
+  background: #0e1d28;
 }
 
 .header__wrapper {
@@ -643,18 +650,22 @@ img {
 .places__card_size_lg {
   grid-column: span 3;
 }
+
 .places__card_size_sm {
   grid-column: span 2;
 }
+
 .places__card-pic {
   width: 100%;
   /* плавное увеличение */
   transition: .15s all;
 }
-.places__card-pic_size_lg{
+
+.places__card-pic_size_lg {
   height: 354px;
   object-fit: none;
 }
+
 /* ccылка */
 .places__card-link {
   position: absolute;
@@ -664,92 +675,107 @@ img {
   height: 100%;
   z-index: 4;
 }
-.places__card-pic_size_sm{
+
+.places__card-pic_size_sm {
   height: 283px;
   object-fit: none;
 }
+
 /* Places styles end */
 
 /*  Tours styles start */
-.tours{
+.tours {
   margin-bottom: 139px;
   margin-top: 131px;
 }
-.tours__tour{
+
+.tours__tour {
   display: grid;
-  grid-template-columns:repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 0 108px;
   align-items: center;
   margin-bottom: 77px;
 }
-.tour__info{
+
+.tour__info {
   padding-left: 47px;
 }
-.tour__title{
+
+.tour__title {
   font-weight: 500;
   font-size: 30px;
   line-height: 40px;
   margin-bottom: 85px;
 }
 
-.tour__desc{
+.tour__desc {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 58px;
 }
-.tour__more{
+
+.tour__more {
   font-size: 16px;
   color: #006dfe;
   text-decoration: none;
   padding-right: 59px;
   background: url(../img/Shape.svg) no-repeat right center;
 }
+
 .tour__more:hover,
 .tour__more:focus {
   opacity: .65;
 }
+
 /*  Tours styles end */
 
 /*  Top places styles start */
-.top{
+.top {
   margin-bottom: 86px;
 }
-.top__title{
+
+.top__title {
   margin-bottom: 54px;
 }
-.top__cards{
+
+.top__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap:0 57px;
+  grid-gap: 58px 57px;
 }
-.top__card-pic{
+
+.top__card-pic {
   position: relative;
   margin-bottom: 45px;
 }
-.top__card{
+
+.top__card {
   display: flex;
   flex-direction: column;
 }
-.top__card-stats{
+
+.top__card-stats {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  position:absolute;
+  position: absolute;
   bottom: 0;
-  left:0;
-  width:100%;
+  left: 0;
+  width: 100%;
   background: rgba(21, 24, 36, 0.6);
   padding: 16px 25px;
 }
-.top__card-title{
+
+.top__card-title {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
-  margin: 0 auto 0 0 ;
+  margin: 0 auto 0 0;
 }
-.top__card-likes{
+
+.top__card-likes {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -758,7 +784,8 @@ img {
   background: url(../img/Лайк.svg) no-repeat right;
   margin-right: 14px;
 }
-.top__card-comments{
+
+.top__card-comments {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -767,11 +794,12 @@ img {
   background: url(../img/Значок\ сообщений.svg) no-repeat right;
 }
 
-.top__card-desc{
+.top__card-desc {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 31px;
 }
+
 /* кнопка SEE MORE*/
 .top__card-more {
   padding: 12px 19px;
@@ -788,4 +816,77 @@ img {
 .top__card-more:active {
   background: #0e66da;
 }
+
 /*  Top places styles end */
+
+/*  Videos styles start */
+.videos {
+  width: 100%;
+}
+
+.videos__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.videos__item {
+  padding-top: 80.25%;
+}
+
+.video__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*  Videos styles end */
+
+.footer {
+  background: #0e1d28;
+  padding-top: 119px 0;
+}
+
+.footer__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__logo {
+  width: 50%;
+}
+
+.footer_nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.footer__menu-title {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer__menu-link {
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.footer__menu-link:hover,
+.footer__menu-link:focus,
+.footer__menu-link:active {
+  opacity: .75;
+}
+
+.video__item {
+  width: 100vw;
+  height: 609px;
+}
